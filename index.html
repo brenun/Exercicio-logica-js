@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Logica 01</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exercicios</h1>
+
+    <section>
+        <h2>1. Área do Quadrado</h2>
+        <label for="lado">Digite o valor do lado do quadrado:</label>
+        <input type="number" id="lado" min="0">
+        <button onclick="calcularAreaQuadrado()">Calcular</button>
+        <p id="resultado"></p>
+    </section>
+
+    <section>
+        <h2>2. Calcule o produto dos dois
+          primeiros e some com o produto dos dois últimos.</h2>
+        <label for="valor1">Valor 1:</label>
+        <input type="number" id="valor1" min="0">
+        <label for="valor2">Valor 2:</label>
+        <input type="number" id="valor2" min="0">
+        <label for="valor3">Valor 3:</label>
+        <input type="number" id="valor3" min="0">
+        <label for="valor4">Valor 4:</label>
+        <input type="number" id="valor4" min="0">
+        <button onclick="calcularProdutoSoma()">Calcular</button>
+        <p id="resultado2"></p>
+    </section>
+
+    <section>
+      <h2>3. Calcular o desconto de 10% sobre o preço de
+        compra de um produto (um bem, um objeto).</h2>
+        <label for="valordobem">Valor do bem:</label>
+        <input type="number" id="valordobem" min="0">
+        <button onclick="calcularDesconto()">Calcular</button>
+        <p id="resultadoDesconto"></p>
+    </section>
+
+    <section>
+        <h2>4. Calculadora de descontos</h2>
+        <label for="valordoproduto">Valor do produto:</label>
+        <input type="number" id="valordoproduto" min="0">
+        <label for="valordodesconto">Valor do percentual:</label>
+        <input type="number" id="valordodesconto" min="0">
+        <button onclick="calcularDesconto2()">Calcular</button>
+        <p id="resultadoDesconto2"></p>
+    </section>
+
+    <section>
+        <h2>5. Inversor de números</h2>
+        <label for="numeroA">Digite um valor A</label>
+        <input type="number" id="numeroA" min="0">
+        <label for="numeroB">Digite um valor B</label>
+        <input type="number" id="numeroB" min="0">
+        <button onclick="inverterNumero()">Inverter</button>
+        <p id="resultadoDaInversao"></p>
+    </section>
+
+    <section>
+        <h2>6. Calculadora de saldo devedor</h2>
+        <label for="parcelas">Total de Parcelas:</label>
+        <input type="number" id="parcelas" min="0">
+        <label for="parcelas_pagas">Número de parcelas pagas:</label>
+        <input type="number" id="parcelas_pagas" min="0">
+        <label for="valor_das_parcelas">Valor das Parcelas</label>
+        <input type="number" id="valor_das_parcelas" min="0">
+        <button onclick="calcularSaldoDevedor()">Calcular</button>
+        <p id="resultadoTotal"></p>
+    </section>
+
+    <section>
+        <h2>7. Calculadora de média de notas</h2>
+        <label for="nota1">Digite a primeira nota:</label>
+        <input type="number" id="nota1" min="0">
+        <label for="nota2">Digite a segunda nota:</label>
+        <input type="number" id="nota2" min="0">
+        <label for="nota3">Digite a terceira nota:</label>
+        <input type="number" id="nota3" min="0">
+        <button onclick="calcularMedia()">Calcular</button>
+        <p id="resultadoDaMedia"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
